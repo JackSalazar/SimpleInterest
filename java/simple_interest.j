@@ -10,11 +10,11 @@
            int SI;
 
            // Insert your code here
-           SI = R / 100 * P * T;
+           SI = R  * P * T / 100;
 
 
 
            mips.print_d(SI);
            mips.print_ci('\n');
-           return SI;
+           return 0;
          }
