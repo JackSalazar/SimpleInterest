@@ -6,7 +6,6 @@
          //   T  = number of Terms in years.
 
          public static int simple_interest(int P, int R, int T) {
-   
            int SI;
 
            // Insert your code here
