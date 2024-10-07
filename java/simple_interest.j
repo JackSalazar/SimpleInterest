@@ -13,7 +13,6 @@
            SI = R  * P * T / 100;
 
 
-
            mips.print_d(SI);
            mips.print_ci('\n');
            return 0;
