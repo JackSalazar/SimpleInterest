@@ -1,4 +1,7 @@
-
+        .text
+        .globl equation
+        .data
+        
          # SI = R / 100 * P * T;
          # where
          #   P  = Principal, i.e., your investment
