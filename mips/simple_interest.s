@@ -17,9 +17,9 @@
         #T = a2
 
         #dont use mul, it's pseudocode. Use the harder version which is mult, that contains the result of hi and lo
-        #I don't think it's necessary for this, but for the sake of documentation, init, name, body, next, done
+        #I don't think it's necessary for this, but for the sake of documentation, init, name, body, next, done 
 
-        
+
     simple_interest: nop                  #public static int simple_interest(int P, int R, int T) {
                                      #int SI;
                                      #
