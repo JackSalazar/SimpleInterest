@@ -100,7 +100,7 @@ Note that these instructions presume that the current working directory is: `~/c
      ```
 
 
-### Java: `simple-interest.j`  
+### Java: `simple_interest.j`  
 
   1. Start the `java` Task with the file `java/simple_interest.j` (see [Programming Workflow](./programming_flow.md))
   1. Incrementally Work on the `java` Task  
