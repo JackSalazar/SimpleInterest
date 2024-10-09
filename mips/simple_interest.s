@@ -29,14 +29,17 @@
                                      ## Insert your code here
                                      ##SI = R  * P * T / 100; 
         li $t0, 100
-        mul $t1, $a1, $a0                             #t1 = R * P;
+        mult $a1, $a0                             #t1 = R * P;
+        mflo $t1
+        mfhi $t2
+        mv $v0, $t1
         #print_d $a1
         #print_d
-        mul $t1, $t1, $a2                             #t1 = t1 * T;
-        div $t1, $t1, $t0                             #SI = t1 / 100;
-        move $v0, $t1                             #
+        #mult $t2, $t1, $a2                             #t1 = t1 * T;
+        #div $t3, $t2, $t0                             #SI = t1 / 100;
+        #move $v0, $t3                             #
         
-        print_d $t1                          #mips.print_d(SI);
-        print_ci '\n'                              #mips.print_ci('\n');
+        print_d($v0)                          #mips.print_d(SI);
+        print_ci('\n')                              #mips.print_ci('\n');
                                      # return 0;
                           #}

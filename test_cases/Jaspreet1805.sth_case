@@ -1,0 +1,15 @@
+[default]
+DRIVER=java_subroutine
+OPTIONS="-R null"
+
+[global]
+ENTRY=simple_interest
+EXIT_STATUS=0
+
+[case]
+ARGS="1000 4 6"
+OUTPUT=240                  
+
+[case]
+ARGS="4000 5 8"
+OUTPUT=1600 
