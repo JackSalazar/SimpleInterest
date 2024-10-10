@@ -1,6 +1,6 @@
         .text
         .globl simple_interest
-        .data
+        #.data
 
          # SI = R / 100 * P * T;
          # where
@@ -21,6 +21,15 @@
 
 
     simple_interest: nop                  #public static int simple_interest(int P, int R, int T) {
+        #li $t0, 100
+        #li $t0, 617250
+        #move $a0, $t0
+        #li $v0, 1            #tells the system to print $a0 at syscall
+        #add $a0, $zero, $t0 #non-pseudo code for move $a0, $t1
+        #syscall              #executes $v0, which is to print $a0
+        #jr $ra  
+
+
                                      #int SI;
                                      #
                                      #int t1;
@@ -28,18 +37,25 @@
                                      #
                                      ## Insert your code here
                                      ##SI = R  * P * T / 100; 
-        li $t0, 100
+        li $t0, 100          #turns 100 into a variable
         mult $a1, $a0                             #t1 = R * P;
-        mflo $t1
-        mfhi $t2
-        mv $v0, $t1
-        #print_d $a1
-        #print_d
-        #mult $t2, $t1, $a2                             #t1 = t1 * T;
-        #div $t3, $t2, $t0                             #SI = t1 / 100;
+        mflo $t1             #moves lo to a variable
+        mfhi $t2     #test hi        #moves hi to a variable
+
+        mult $t1, $a2                             #t2 = t1 * T;
+        mflo $t3
+        mfhi $t4  #test hi
+        addu $t4, $t4, $t2 #test hi
+        div $t3, $t0                             #SI = t2 / 100;
         #move $v0, $t3                             #
-        
-        print_d($v0)                          #mips.print_d(SI);
-        print_ci('\n')                              #mips.print_ci('\n');
+        mflo $t5
+        mfhi $t6  #test hi
+        addu $t6, $t6, $t4 #test hi
+        li $v0, 1            #tells the system to print $a0 at syscall
+        add $a0, $zero, $t6 #non-pseudo code for move $a0, $t1
+        syscall              #executes $v0, which is to print $a0
+        jr $ra               #tells the process to return
+        #print_d($v0)                          #mips.print_d(SI);
+        #print_ci('\n')                              #mips.print_ci('\n');
                                      # return 0;
                           #}
