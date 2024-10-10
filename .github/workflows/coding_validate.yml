@@ -6,6 +6,7 @@ on:
       - java_submitted
       - java_tac_submitted 
       - mips_submitted
+      - prof_test
 
 
 jobs:
