@@ -164,7 +164,7 @@ confirm_branch: validate_branch
 
 
 ############################################################################
-validate_branch: validate_branch_exists validate_merged validate_ontime
+validate_branch: 
 	git branch --list
 	git branch --remote --list
 
