@@ -167,10 +167,6 @@ confirm_branch: validate_branch
 validate_branch: validate_branch_exists validate_merged validate_ontime
 
 
-git branch --remote --list --format="%(refname:short)" origin/java
-
-
-
 validate_branch_exists:
 	@ [[ "$$(git branch --remote --list --format="%(refname:short)" origin/${BRANCH})" == "origin/${BRANCH}" ]] || \
 	  { echo "Remote Branch \"${BRANCH}\" does not exist" ; false ; }
