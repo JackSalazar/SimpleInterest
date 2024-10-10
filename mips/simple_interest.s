@@ -1,5 +1,7 @@
         .text
         .globl simple_interest
+        .include "include/stack.s"
+        .include "include/syscalls.s"
         #.data
 
          # SI = R / 100 * P * T;
@@ -52,8 +54,9 @@
         mfhi $t6  #test hi
         addu $t6, $t6, $t4 #test hi
         li $v0, 1            #tells the system to print $a0 at syscall
-        add $a0, $zero, $t6 #non-pseudo code for move $a0, $t1
+        add $a0, $zero, $t5 #non-pseudo code for move $a0, $t1
         syscall              #executes $v0, which is to print $a0
+        li $v0, 0
         jr $ra               #tells the process to return
         #print_d($v0)                          #mips.print_d(SI);
         #print_ci('\n')                              #mips.print_ci('\n');
