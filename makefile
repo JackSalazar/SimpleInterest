@@ -188,7 +188,7 @@ validate_tag:
 
 validate_matched_tags: 
 	@ bin/git_matched_tags ${SUBMISSION_TAG} || \
-	  { echo "Remote/Local Tags Mismatch:  ${SUBMISSION_TAG} (hint \'git push origin submitted\')" ; false ; }
+	  { echo "Remote/Local Tags Mismatch:  ${SUBMISSION_TAG} (hint 'git push origin ${SUBMISSION_TAG}')" ; false ; }
 
 
 .PHONEY: clean
