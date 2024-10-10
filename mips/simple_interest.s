@@ -51,7 +51,7 @@
         div $t3, $t0                             #SI = t2 / 100;
         #move $v0, $t3                             #
         mflo $t5
-        mfhi $t6  #test hi
+        #mfhi $t6  #test hi
         addu $t6, $t6, $t4 #test hi
         li $v0, 1            #tells the system to print $a0 at syscall
         add $a0, $zero, $t5 #non-pseudo code for move $a0, $t1
