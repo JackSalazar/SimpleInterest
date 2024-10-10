@@ -42,17 +42,10 @@
         li $t0, 100          #turns 100 into a variable
         mult $a1, $a0                             #t1 = R * P;
         mflo $t1             #moves lo to a variable
-        #mfhi $t2     #test hi        #moves hi to a variable
-
         mult $t1, $a2                             #t2 = t1 * T;
         mflo $t3
-        #mfhi $t4  #test hi
-        #addu $t4, $t4, $t2 #test hi
         div $t3, $t0                             #SI = t2 / 100;
-        #move $v0, $t3                             #
         mflo $t5
-        #mfhi $t6  #test hi
-        #addu $t6, $t6, $t4 #test hi
         li $v0, 1            #tells the system to print $a0 at syscall
         add $a0, $zero, $t5 #non-pseudo code for move $a0, $t1
         syscall              #executes $v0, which is to print $a0
