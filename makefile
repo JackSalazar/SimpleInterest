@@ -165,7 +165,8 @@ confirm_branch: validate_branch
 
 ############################################################################
 validate_branch: validate_branch_exists validate_merged validate_ontime
-
+	git branch --list
+	git branch --remote --list
 
 validate_branch_exists:
 	@ [[ "$$(git branch --remote --list --format="%(refname:short)" origin/${BRANCH})" == "origin/${BRANCH}" ]] || \
