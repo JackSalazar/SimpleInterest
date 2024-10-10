@@ -23,22 +23,7 @@
 
 
     simple_interest: nop                  #public static int simple_interest(int P, int R, int T) {
-        #li $t0, 100
-        #li $t0, 617250
-        #move $a0, $t0
-        #li $v0, 1            #tells the system to print $a0 at syscall
-        #add $a0, $zero, $t0 #non-pseudo code for move $a0, $t1
-        #syscall              #executes $v0, which is to print $a0
-        #jr $ra  
 
-
-                                     #int SI;
-                                     #
-                                     #int t1;
-                                     #int t2;
-                                     #
-                                     ## Insert your code here
-                                     ##SI = R  * P * T / 100; 
         li $t0, 100          #turns 100 into a variable
         mult $a1, $a0                             #t1 = R * P;
         mflo $t1             #moves lo to a variable
