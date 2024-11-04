@@ -1,0 +1,103 @@
+# Grading Report
+# Github Account: JackSalazar
+# Assignment:    "41-simple-interest"
+# --- Due Date:        "Oct 11 23:59 PDT"
+# --- Version Graded:  "graded_version (223ad9f)"
+# --- Version Date:    "Nov 03 12:38 "
+# --- Status:          "Submission On Time"
+
+   9 Points:  Test Cases (10 Points):
+                    did not fix my error
+  15 Points:  Java Execution (15 Points):
+  15 Points:  Java Code (15 Points):
+  15 Points:  Java TAC Execution (15 Points):
+  15 Points:  Java TAC Code (15 Points):
+  15 Points:  MIPS Execution (15 Points):
+  12 Points:  MIPS Code (15 Points):
+                    follow the process
+   0 Points:  Additional Comments (0 Points):
+                    do some code cleanup
+----
+  96 Points:  Total
+
+ASSIGNMENT_41_total="96"        # JackSalazar
+
+BRANCHES:
+  java
+  java_tac
+* main
+  mips
+
+TAGS:
+java_submitted
+java_tac_submitted
+mips_submitted
+prof_test
+
+STUDENT COMMIT HISTORY:
+
+* Due Date: Oct 11 23:59 PDT  -----------------
+*    7e0925f  Oct 09 20:31 PDT  (tag: mips_submitted)
+|\  
+| *  add61f3  Oct 09 20:30 PDT  (origin/mips, mips)
+| *  1bdb66a  Oct 09 20:30 PDT 
+| *  8029ae0  Oct 09 20:30 PDT 
+| *  5710ff3  Oct 09 20:29 PDT 
+* |  abd4179  Oct 09 20:22 PDT 
+* |  1ed2a65  Oct 09 20:22 PDT 
+* |    e025621  Oct 09 20:18 PDT  (tag: java_tac_submitted)
+|\ \  
+| * |  b095333  Oct 09 20:13 PDT  (origin/java_tac, java_tac)
+| * |  5cf3067  Oct 09 20:12 PDT 
+| * |  6b56356  Oct 09 20:11 PDT 
+| * |  1d7d1e5  Oct 09 20:10 PDT 
+| * |  eb73450  Oct 09 20:03 PDT 
+* | |  cf25490  Oct 09 20:18 PDT 
+* | |  fa7bfd0  Oct 09 20:09 PDT 
+* | |  7f1e746  Oct 09 20:07 PDT 
+* | |  fbaa1a8  Oct 09 20:06 PDT 
+* | |  ecfa251  Oct 09 20:06 PDT 
+* | |    89662ac  Oct 09 19:55 PDT 
+|\ \ \  
+| |_|/  
+|/| |   
+* | |  56085fe  Oct 09 19:49 PDT 
+* | |  3d93fd3  Oct 09 19:46 PDT 
+* | |  87b544c  Oct 09 19:45 PDT 
+* | |  1acf6d8  Oct 09 19:42 PDT 
+* | |  14a292c  Oct 09 19:22 PDT 
+* | |  6ac20bc  Oct 09 19:18 PDT 
+* | |  20d5a28  Oct 09 13:35 PDT 
+|\| | 
+| * |    0165514  Oct 09 12:04 PDT  (tag: java_submitted)
+| |\ \  
+| | * |  4d8f645  Oct 09 12:03 PDT  (origin/java, java)
+| | * |  69451d6  Oct 09 12:03 PDT 
+| | * |  0e2c22c  Oct 09 12:03 PDT 
+| | * |  f252f93  Oct 09 12:02 PDT 
+| * | |  3b0eb9e  Oct 09 11:51 PDT 
+| * | |    1ebe643  Oct 09 11:29 PDT 
+| |\ \ \  
+| | |_|/  
+| |/| |   
+* | | |  9e4bec3  Oct 09 12:42 PDT 
+* | | |  a12f9b4  Oct 09 12:40 PDT 
+* | | |  1c752f0  Oct 09 11:28 PDT 
+* | | |  1059fb0  Oct 08 10:32 PDT 
+* | | |  1bb15a0  Oct 08 10:30 PDT 
+* | | |  9354c59  Oct 08 10:30 PDT 
+* | | |  115a71f  Oct 08 10:18 PDT 
+|/ / /  
+* | |  c3f0a4b  Oct 08 10:15 PDT 
+* | |  8148bd5  Oct 08 10:14 PDT 
+* | |  bb07dd9  Oct 08 10:13 PDT 
+* | |  73be12a  Oct 08 10:12 PDT 
+| |/  
+|/|   
+* |  c048abb  Oct 07 14:29 PDT 
+* |  70b1035  Oct 07 12:07 PDT 
+* |  7b10265  Oct 07 12:06 PDT 
+* |  cbfac54  Oct 07 12:05 PDT 
+* |  d53e717  Oct 07 11:58 PDT 
+|/  
+
